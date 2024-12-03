@@ -1,0 +1,87 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  position: relative;
+  overflow: hidden;
+  animation: blink 2.5s infinite alternate;
+}
+
+.container p {
+  margin: 1rem;
+  font-family: 'Great Vibes', Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 5px 0px 1px black;
+}
+
+p.left {
+  left: 0;
+}
+
+p.right {
+  right: 0;
+}
+
+p.left, p.right {
+  margin: 0;
+  position: absolute;
+  padding: 1rem;
+  background-color:rgb(255, 255, 255, 0);
+  color:rgb(255, 255, 255, 0);
+  text-shadow: none;
+  transition: .3s;
+}
+
+p.left:hover, p.right:hover {
+  background-color:rgb(255, 255, 255, 0.1);
+  color:rgb(255, 255, 255, 0.3);
+}
+
+p.birthday p {
+  text-decoration: wavy;
+}
+
+p.age {
+  font-size: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit {
+  position: relative;
+}
+
+.crown {
+  position: absolute;
+  top: 0px; /* Sesuaikan posisi vertikal mahkota */
+  left: 90%;
+  transform: translateX(-50%);
+  font-size: 2rem; /* Sesuaikan ukuran mahkota */
+}
+
+p.nama {
+  margin: 0rem;
+  color: #ffee00;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #38c700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
