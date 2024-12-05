@@ -8,13 +8,21 @@
   background-color: #808080;
   position: relative;
   overflow: hidden;
-  animation: blink 2.5s infinite alternate;
+  animation: slideRight 3s forwards;
+}
+
+@keyFramse slideRight {
+  0% {
+    transform: translateX(-20);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .container p {
   margin: 1rem;
-  font-family: 'Great Vibes', Arial, Helvetica, sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -30,23 +38,28 @@ p.right {
   right: 0;
 }
 
-p.left, p.right {
+p.up {
+  top: 0;
+}
+
+p.left, p.right, p.up {
   margin: 0;
   position: absolute;
-  padding: 1rem;
+  padding: .2rem;
   background-color:rgb(255, 255, 255, 0);
   color:rgb(255, 255, 255, 0);
   text-shadow: none;
   transition: .3s;
 }
 
-p.left:hover, p.right:hover {
+p.left:hover, p.right:hover, p.up:hover {
   background-color:rgb(255, 255, 255, 0.1);
-  color:rgb(255, 255, 255, 0.3);
+  color:rgb(255, 255, 255, 0.5);
 }
 
-p.birthday p {
-  text-decoration: wavy;
+p.birthday {
+  font-size: 5rem;
+  font-family: 'Great Vibes', Arial, Helvetica, sans-serif;
 }
 
 p.age {
@@ -64,12 +77,15 @@ p.age {
 .crown {
   position: absolute;
   top: 0px; /* Sesuaikan posisi vertikal mahkota */
-  left: 90%;
+  left: 50%;
   transform: translateX(-50%);
   font-size: 2rem; /* Sesuaikan ukuran mahkota */
 }
 
 p.nama {
+  font-size: 5rem;
+  font-family: 'Kanit', Arial, Helvetica, sans-serif;
+  text-decoration: underline;
   margin: 0rem;
   color: #ffee00;
   display: flex;

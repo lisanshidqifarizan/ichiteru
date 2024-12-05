@@ -1,0 +1,43 @@
+.digital {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    background-color: #808080;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 217, 0, 0.345);
+}
+
+.countdown p {
+    padding: 2rem 0rem;
+    width: 80px;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.countdown p:nth-child(2){
+    width: 40px;
+    text-align: end;
+}
+
+.countdown.finished {
+    animation: fadeOutZoom 1s forwards;
+}
+
+@keyframes fadeOutZoom {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
