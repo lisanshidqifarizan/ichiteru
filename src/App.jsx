@@ -3,7 +3,7 @@ import BirthdayAnimation from './components/BirthdayAnimation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <BirthdayAnimation />
     </div>
   );

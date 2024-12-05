@@ -4,6 +4,7 @@ import confetti from "canvas-confetti";
 import '../App.css'
 import Balon from "./Balon";
 import Bubbles from "./Bubbles";
+import Digital from "./Digital";
 
 const BirthdayAnimation = () => {
     const tanggal = 6; // Tanggal lahir
@@ -129,6 +130,7 @@ const BirthdayAnimation = () => {
                 <Balon />
                 <Bubbles />
                 <p onClick={FireWorks}>FireWorks!</p>
+                <Digital />
             </div>
         </>
     );
