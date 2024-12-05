@@ -11,3 +11,7 @@ canvas {
   width: 100%;
   height: 100%;
 }
+
+p.birthday, span.crown, p.right, p.left, p.up, p.nama  {
+  cursor: pointer;
+}
