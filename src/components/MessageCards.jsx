@@ -5,7 +5,7 @@ export default function MessageCards({ onCloseCard }) {
         <div className="card-container">
             <div className="birthday-card">
                 <h2>Hi Chii</h2>
-                <p>It's ur Birthdayy!! Yayyy!! ~\(≧▽≦)/~🎉</p>
+                <p>It's ur Birthdayy!! Yayyy!! <br />~\(≧▽≦)/~🎉</p>
                 <p>
                     I hope you have a nice day and a beautiful year ahead!!, then I pray that the goals you are talking about will be achieved...
                     May Allah bless you with happiness and good health!
